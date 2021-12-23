@@ -1,0 +1,11 @@
+<!-- templates/registration.html-->
+{% extends "base.html" %}
+
+{% block contend %}
+<h1>Message board registration</h1>
+<ul>
+    {% for post in all_posts_list %}
+        <li>{{ post.text }}</li>
+    {% endfor %}
+</ul>
+{% endblock contend %}
